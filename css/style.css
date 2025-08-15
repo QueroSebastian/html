@@ -1,0 +1,27 @@
+body {
+  background-color: rgb(54, 54, 54);
+  color: white;
+}
+
+p {
+  border: 2px solid powderblue;
+  padding: 30px;
+}
+
+blockquote {
+  background-color: blueviolet;
+  padding: 20px;
+  margin: 20px;
+}
+
+address {
+  background-color: blueviolet;
+  padding: 20px;
+  margin: 20px;
+}
+
+pre {
+  background-color: blueviolet;
+  padding: 20px;
+  margin: 20px;
+}

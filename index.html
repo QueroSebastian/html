@@ -10,6 +10,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .test {
+        color: aquamarine;
+      }
+    </style>
   </head>
   <!-- <body> Defines the document's body -->
   <body>
@@ -32,7 +38,6 @@
     <!-- The <img> tag should also contain the width and height attributes, which specify the width and height of the image (in pixels) -->
     <!-- The required alt attribute for the <img> tag specifies an alternate text for an image, if the image for some reason cannot be displayed -->
     <img src="images/w3schools.png" alt="W3Schools.com" width="200" />
-    <p style="color: red">This is a red paragraph.</p>
     <!-- The value of the title attribute will be displayed as a tooltip when you mouse over the element -->
     <!-- We always use quotes around attribute values -->
     <p title="I'm a tooltip">
@@ -102,5 +107,21 @@
     <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
     <!-- The HTML <bdo> tag is used to override the current text direction -->
     <bdo dir="rtl">This text will be written from right to left</bdo>
+    <!-- An RGB color value represents RED, GREEN, and BLUE light sources -->
+    <h1 style="background-color: rgb(255, 99, 71)">...</h1>
+    <!-- Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255) -->
+    <h1 style="background-color: #ff6347">...</h1>
+    <!-- In HTML, a color can be specified using hue, saturation, and lightness (HSL) in the form: -->
+    <!-- hsl(hue, saturation, lightness) -->
+    <!-- Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue. -->
+    <h1 style="background-color: hsl(9, 100%, 64%)">...</h1>
+    <!-- An RGBA color value is an extension of RGB with an Alpha channel (opacity) -->
+    <h1 style="background-color: rgba(255, 99, 71, 0.5)">...</h1>
+    <!-- HSLA color values are an extension of HSL color values, with an Alpha channel - which specifies the opacity for a color -->
+    <!-- hsla(hue, saturation, lightness, alpha) -->
+    <h1 style="background-color: hsla(9, 100%, 64%, 0.5)">...</h1>
+    <!-- Inline Style - by using the style attribute inside HTML elements -->
+    <p style="color: aquamarine">This paragraph has an inline style.</p>
+    <p class="test">This paragraph has an internal style.</p>
   </body>
 </html>
