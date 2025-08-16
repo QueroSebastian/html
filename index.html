@@ -21,7 +21,7 @@
   <body>
     <!-- Start tag / Element content / End tag -->
     <!-- <h1> to <h6> defines HTML headings -->
-    <h1>This is heading 1</h1>
+    <h1 id="top">This is heading 1</h1>
     <h2>This is heading 2</h2>
     <h3>This is heading 3</h3>
     <h4>This is heading 4</h4>
@@ -32,12 +32,10 @@
     <!-- The HTML <br> element defines a line break -->
     <p>This is another <br />paragraph with a line break.</p>
     <!-- HTML Attributes provide additional information about HTML elements -->
-    <!-- The href attribute specifies the URL of the page the link goes to -->
-    <a href="https://www.w3schools.com">This is a link</a><br />
     <!-- The src attribute specifies the path to the image to be displayed -->
     <!-- The <img> tag should also contain the width and height attributes, which specify the width and height of the image (in pixels) -->
     <!-- The required alt attribute for the <img> tag specifies an alternate text for an image, if the image for some reason cannot be displayed -->
-    <img src="images/w3schools.png" alt="W3Schools.com" width="200" />
+    <img name="w3" src="images/w3schools.png" alt="W3Schools.com" width="200" />
     <!-- The value of the title attribute will be displayed as a tooltip when you mouse over the element -->
     <!-- We always use quotes around attribute values -->
     <p title="I'm a tooltip">
@@ -123,5 +121,28 @@
     <!-- Inline Style - by using the style attribute inside HTML elements -->
     <p style="color: aquamarine">This paragraph has an inline style.</p>
     <p class="test">This paragraph has an internal style.</p>
+    <!-- An unvisited link is underlined and blue -->
+    <!-- A visited link is underlined and purple -->
+    <!-- An active link is underlined and red -->
+    <!-- The href attribute specifies the URL of the page the link goes to -->
+    <!-- The target attribute can have one of the following values: -->
+    <!-- _self - Default. Opens the document in the same window/tab as it was clicked -->
+    <!-- _blank - Opens the document in a new window or tab -->
+    <!-- Both examples above are using an absolute URL (a full web address) in the href attribute. -->
+    <a href="https://www.w3schools.com" target="_top">This is a link</a>
+    <!-- A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part): -->
+    <!-- HTML links can be used to create bookmarks, so that readers can jump to specific parts of a web page -->
+    <a href="#top">Go up!</a>
+    <!-- Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email): -->
+    <a href="mailto:sebastian.quero@pm.me">Send email</a>
+    <!-- 
+      * An unvisited link is underlined and blue
+      * A visited link is underlined and purple
+      * An active link is underlined and red
+    -->
+    <!-- JavaScript allows you to specify what happens at certain events, such as a click of a button: -->
+    <button onclick="document.w3.src='images/w3schools2.jpg'">
+      HTML Tutorial</button
+    ><br />
   </body>
 </html>
